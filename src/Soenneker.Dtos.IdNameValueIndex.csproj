@@ -43,7 +43,7 @@
     
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="Soenneker.Dtos.IdNamePair" Version="3.0.414" />
+        <PackageReference Include="Soenneker.Dtos.IdNamePair" Version="3.0.415" />
         <PackageReference Include="Soenneker.Dtos.IdNameValue" Version="3.0.110" />
     </ItemGroup>
 </Project>
