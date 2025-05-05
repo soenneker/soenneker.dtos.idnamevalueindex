@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Dtos.IdNameValueIndex
+﻿# Contributing to Soenneker.Dtos.IdNameValueIndex
 
 We're excited that you're interested in contributing!
 
