@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Dtos.IdNameValueIndex.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Dtos.IdNameValueIndex\Soenneker.Dtos.IdNameValueIndex.csproj" />
     </ItemGroup>
 
     <ItemGroup>
