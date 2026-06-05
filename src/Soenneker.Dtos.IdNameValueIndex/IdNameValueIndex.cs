@@ -10,6 +10,9 @@ namespace Soenneker.Dtos.IdNameValueIndex;
 [PublicOpenApiObject]
 public record IdNameValueIndex : IdNameValue.IdNameValue
 {
+    /// <summary>
+    /// Gets or sets index.
+    /// </summary>
     [JsonPropertyName("index")]
     [JsonProperty("index")]
     public string? Index { get; set; }
