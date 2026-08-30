@@ -5,7 +5,7 @@
 
 # Soenneker.Dtos.IdNameValueIndex
 
-A minimal Record type with an Id (string), Name (string), Value (string?), and Index (string?) and maximum JSON compatibility.
+A small DTO for carrying an identifier, display name, optional value, and optional string index. It supports both `System.Text.Json` and Newtonsoft.Json with the same JSON property names.
 
 ## Install
 
@@ -13,12 +13,29 @@ A minimal Record type with an Id (string), Name (string), Value (string?), and I
 dotnet add package Soenneker.Dtos.IdNameValueIndex
 ```
 
-## What you get
+## Usage
 
-- `IdNameValueIndex` — A minimal Record type with an Id (string), Name (string), Value (string?), and Index (string?) and maximum JSON compatibility.
+```csharp
+using Soenneker.Dtos.IdNameValueIndex;
 
-## API at a glance
+var option = new IdNameValueIndex
+{
+    Id = "standard",
+    Name = "Standard shipping",
+    Value = "ground",
+    Index = "2"
+};
+```
 
-| API | What it does | Result / important behavior |
-| --- | --- | --- |
-| `IdNameValueIndex.Index` | Gets or sets index. | Gets or sets index. |
+The serialized shape is:
+
+```json
+{
+  "id": "standard",
+  "name": "Standard shipping",
+  "value": "ground",
+  "index": "2"
+}
+```
+
+`Id` and `Name` are inherited from `IdNamePair`; `Value` is inherited from `IdNameValue`. `Value` and `Index` are nullable. `Index` is a string, so callers can preserve non-numeric or formatted index values without conversion.
