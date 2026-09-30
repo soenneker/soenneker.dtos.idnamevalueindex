@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 using Soenneker.Attributes.PublicOpenApiObject;
 
@@ -14,6 +13,5 @@ public record IdNameValueIndex : IdNameValue.IdNameValue
     /// Gets or sets index.
     /// </summary>
     [JsonPropertyName("index")]
-    [JsonProperty("index")]
     public string? Index { get; set; }
 }

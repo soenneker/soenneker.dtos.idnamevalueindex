@@ -5,7 +5,7 @@
 
 # Soenneker.Dtos.IdNameValueIndex
 
-A small DTO for carrying an identifier, display name, optional value, and optional string index. It supports both `System.Text.Json` and Newtonsoft.Json with the same JSON property names.
+A small DTO for carrying an identifier, display name, optional value, and optional string index. It supports `System.Text.Json` with the same JSON property names.
 
 ## Install
 
